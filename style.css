@@ -1,74 +1,81 @@
-
-body {
-  font-family: Arial, sans-serif;
+/* General Reset */
+* {
   margin: 0;
-  background: #f4f6f8;
-  color: #222;
+  padding: 0;
+  box-sizing: border-box;
 }
-header {
-  background-color: #1a1a2e;
-  color: white;
-  padding: 1rem 2rem;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f8fc;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  color: white;
 }
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
-nav .menu {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
+  gap: 2rem;
 }
-.menu > li {
-  position: relative;
-  cursor: pointer;
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  color: black;
-  display: none;
-  flex-direction: column;
-  min-width: 200px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  z-index: 999;
+.nav-links li a.active,
+.nav-links li a:hover {
+  border-bottom: 2px solid white;
 }
-.submenu li {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid #ddd;
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: #e3f2fd;
 }
-.submenu li:hover {
-  background-color: #f0f0f0;
+.hero h1 {
+  font-size: 2.8rem;
+  color: #0d47a1;
+  margin-bottom: 1rem;
 }
-.dropdown:hover .submenu {
-  display: flex;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
-main {
+.cta-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+/* About Section */
+.about-section {
   padding: 4rem 2rem;
-  text-align: center;
+  max-width: 800px;
+  margin: auto;
 }
-footer {
-  background: #111;
-  color: #ccc;
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
+.about-section h1 {
+  font-size: 2.2rem;
+  color: #1976d2;
+  margin-bottom: 1rem;
 }
-@media (max-width: 768px) {
-  nav .menu {
-    flex-direction: column;
-  }
-  .submenu {
-    position: static;
-    box-shadow: none;
-  }
+.about-section p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
 }
