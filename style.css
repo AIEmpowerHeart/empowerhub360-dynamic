@@ -1,1 +1,27 @@
-body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; }
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+header {
+  background: #4f46e5;
+  color: white;
+  padding: 2rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 4rem;
+  color: #666;
+}
